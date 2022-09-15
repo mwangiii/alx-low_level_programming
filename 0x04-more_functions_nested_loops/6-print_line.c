@@ -1,20 +1,25 @@
 #include "main.h"
 
 /**
- * print_line - check main
- * @n: an integer input
- * Description: function that draws a straight line
- * Return: Nothing
+ * print_line - Prints a line.
+ * @n: Number of lines.
+ *
+ *Return: Always void.
  */
-
 void print_line(int n)
 {
-	int i;
+	int line;
 
 	if (n > 0)
 	{
-		for (i = 0; i <= n; i++)
-			_putchar('_');
+		for (line = 1 ; line <= n ; line++)
+		{
+			_putchar(95);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
