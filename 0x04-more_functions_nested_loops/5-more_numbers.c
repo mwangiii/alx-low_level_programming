@@ -1,26 +1,32 @@
+#include <stdio.h>
 #include "main.h"
-#include <unistd.h>
 
 /**
- * print_most_numbers - check main
- * Description: Write a function that prints the numbers, from 0 to 9
+ * more_numbers - check main
+ *
+ * Description: function that prints 10 times the numbers, from 0 to 14
  * Return: Nothing
  */
 
-void print_most_numbers(void)
+void more_numbers(void)
 {
-	int c;
+	int i;
+	int j;
 
-	for (c = 0; c <= 9; c++)
+	for (i = 0; i <= 10; i++)
 	{
-		if (c == 2 || c == 4)
+		for (j = 0; j <= 14; j++)
 		{
-			continue;
+			if (j < 10)
+			{
+				_putchar(j + '0');
+			}
+			else
+			{
+				_putchar((j / 10) + '0');
+				_putchar((j % 10) + '0');
+			}
 		}
-		else
-		{
-			_putchar(c + '0');
-		}
+		printf("\n");
 	}
-	_putchar('\n');
 }
