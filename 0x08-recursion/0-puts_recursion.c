@@ -5,11 +5,16 @@
  *
  * Return: Always 0.
  */
-int main(void)
+void();
+char _puts_recursion[] = "String";
 {
-
-    _puts_recursion("Puts with recursion");
-
-    return (0);
-
+	if (*s != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+	{
+		_putchar('\n');
+	}
 }
