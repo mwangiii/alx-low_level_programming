@@ -1,7 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <stdlib.h>
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 int _putchar(char c);
 int _islower(int c);
@@ -23,4 +21,9 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-#endif
+int cop_add(int a, int b);
+int cop_sub(int a, int b);
+int cop_mul(int a, int b);
+int cop_div(int a, int b);
+int cop_mod(int a, int b);
+#endif /* _MAIN_H_ */
