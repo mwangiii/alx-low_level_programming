@@ -1,3 +1,0 @@
-#Make file school
-all: #targetname
-	gcc main.c school.c -o school
